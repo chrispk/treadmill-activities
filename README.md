@@ -13,5 +13,5 @@ docker build . -t my-next-js-app
 Then run the container:
 
 ```bash
-docker run -it -p 3000:3000 next-js
+docker run -it -p 3000:3000 my-next-js-app
 ```
