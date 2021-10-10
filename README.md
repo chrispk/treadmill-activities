@@ -7,11 +7,17 @@ See the default Readme.md packaged with Next.js projects [here](https://github.c
 First, build the Docker container:
 
 ```bash
-docker build . -t my-next-js-app
+docker build . -t treadmill-activities
 ```
 
 Then run the container:
 
 ```bash
-docker run -it -p 3000:3000 my-next-js-app
+docker-compose run --service-ports treadmill-activities npm run dev
+```
+
+Remember to cleanup once your are done (optional):
+
+```bash
+docker-compose down
 ```
